@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    background-color: #111;
+}
+
+section {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    color: white;
+    font-size: 2rem;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.load-area {
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}   
+
+.image {
+    width: 20rem;
+    height: 20rem;
+    background-color: #ffffff08;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,113 @@
+li {
+    display: inline-block;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 5vw;
+}
+
+nav a {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    outline-color: transparent;
+    color: white;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+nav a:link,
+nav a:visited,
+nav a:focus {
+    color: white;
+}
+nav a:hover {
+    color: #f11;
+    text-decoration: underline
+}
+nav a:active {
+    color: #f11;
+}
+
+header {
+    position: sticky;
+    margin: 0;
+    top: 0;
+    padding: 0px 3vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    /* border-bottom: 1px solid rgba(255,255,255,0.08); */
+    background-color: #111;
+}
+
+.logo-name-area {
+    height: 48px;
+    width: 96px;
+    display: flex;
+    align-items:flex-end
+}
+
+.logo {
+    height: 2.5rem;
+    width: 2.5rem;
+    display: inline-block;
+    transform: scale(1) translate(0,-16%);
+}
+
+.name {
+    /* margin-bottom: -3px; */
+    transform: translate(-12%, 0);
+    color: white;
+    font-size: 1.8rem;
+    display: inline-block;
+    align-self: center;
+    font-family: 'Exo 2', sans-serif;
+    letter-spacing: 0.1rem;
+}
+
+@media screen and (max-width: 470px) {
+    .logo {
+        transform: scale(0.9) translate(0,-16%);
+    }
+    .name {
+        font-size: 1.4rem;
+        transform: translate(-16%, 0);
+    }
+    nav a {
+        font-size: 1rem;
+    }
+}
+
+.drop-down-home {
+    position: relative;
+    display: inline-block;
+}
+.drop-down-home-content {
+    display: none;
+    position: absolute;
+    left: -16px;
+    top: -16px;
+    background-color: #111;
+    min-width: max-content;
+    min-height: 60px;
+    box-shadow: 0px 6px 12px 4px rgba(255,16,16,0.08);
+    z-index: 1;
+    border-radius: 12px;
+    padding: 8px 0;
+}
+.drop-down-home-content a {
+    padding: 8px 16px;
+}
+.drop-down-home:hover .drop-down-home-content {
+    display: block;
+
+}   
+
+
+
+
