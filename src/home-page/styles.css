@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    padding: 0;
     background-color: #111;
 }
 
@@ -25,7 +26,7 @@ footer p{
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 90vh;
-    padding: 2rem calc((100vw - 1300px) / 2);
+    padding: 0 calc((100vw - 1300px) / 2) 2rem;
 }
 
 .column-left {
@@ -60,23 +61,16 @@ footer p{
     padding: 0 2rem ;
 }
 
-.primary-image {
-    width: 40vmin;
-    height: 90vmin;
-    border-radius: 1rem;
-    background-color: bisque;
-}
 
 @media screen and (max-width: 768px) {
-    .primary-part-container {
-      grid-template-columns: 1fr;
+
+    .column-left h1 {
+        font-size: 2.1rem;
     }
-    .primary-image {
-        width: 48vmin;
-        height: 96vmin;
+    .column-left p {
+        font-size: 1.1rem;
     }
 }
-
 
 
 .part-description {
@@ -95,13 +89,18 @@ footer p{
     font-family: 'Montserrat Alternates', sans-serif;
 }
 
+@media screen and (max-width: 768px) {
+    .part-description h1 {
+        font-size: 1.4rem;
+    }
+    .part-description p {
+        font-size: 1.1rem;
+    }
+}
 
 
 .column {
     display: flex;
-    /*flex-direction: column;
-    background-color: coral;
-    */
     align-items: center;
     justify-content: space-between;
     

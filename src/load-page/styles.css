@@ -5,15 +5,15 @@ body {
 
 section {
     width: 100vw;
-    height: 90vh;
+    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-a {
+section a {
     color: white;
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-family: 'Exo 2', sans-serif;
 }
 
