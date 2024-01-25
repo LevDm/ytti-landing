@@ -28,9 +28,22 @@ section a {
 .image {
     width: 20rem;
     height: 20rem;
-    background-color: #ffffff08;
     border-radius: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.qr {
+    position: absolute;
+    width: 16rem;
+    height: 16rem;
+    transform: scale(1.16);
+}
+
+.qr-logo {
+    position: absolute;
+    width: 6cqb;
+    height: 6rem;
+    transform: translateY(-0.16rem);
 }
