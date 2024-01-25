@@ -14,7 +14,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    
+
 }
 
 .primary-image-container img:nth-child(1) {
@@ -46,6 +46,12 @@
     .primary-part-container {
       grid-template-columns: 1fr;
     }
+    .primary-image-container {
+        width: 54vmin;
+        height: 120vmin;
+    }
+}
+@media screen and (max-width: 600px) {
     .primary-image-container {
         width: 60vmin;
         height: 133vmin;

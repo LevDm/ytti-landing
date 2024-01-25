@@ -165,21 +165,22 @@ input[name="slide"] {
     transform: translateX(0);
     animation: slideAnimation1 12s infinite, slideAnimation0 0s infinite;
 }
+
 #slide-5-2:checked ~ .carousel-inner,
 #slide-4-2:checked ~ .carousel-inner,
 #slide-3-2:checked ~ .carousel-inner,
 #slide-2-2:checked ~ .carousel-inner,
 #slide-1-2:checked ~ .carousel-inner { 
-    transform: translateX(-100%);
-    animation: slideAnimation2 12s infinite, slideAnimation0 0s infinite;;
+    --transform: translateX(-100%);
+    animation: slideAnimation2 12s infinite, slideAnimation0 0s infinite;
 }
 #slide-5-3:checked ~ .carousel-inner,
 #slide-4-3:checked ~ .carousel-inner,
 #slide-3-3:checked ~ .carousel-inner,
 #slide-2-3:checked ~ .carousel-inner,
 #slide-1-3:checked ~ .carousel-inner { 
-    transform: translateX(-200%);
-    animation: slideAnimation3 12s infinite, slideAnimation0 0s infinite;;
+    --transform: translateX(-200%);
+    animation: slideAnimation3 12s infinite, slideAnimation0 0s infinite;
 }
 
 #slide-5-1:checked ~ .carousel-play, 

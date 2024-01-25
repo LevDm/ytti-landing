@@ -140,7 +140,6 @@ footer p{
 .secondary-part {
     display: flex;
     flex-direction: column;
-    margin-top: 20vw;
     padding: 0 calc((100vw - 1300px) / 2);
 }
 .secondary-part-container {
