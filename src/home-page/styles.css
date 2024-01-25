@@ -61,7 +61,6 @@ footer p{
     padding: 0 2rem ;
 }
 
-
 @media screen and (max-width: 768px) {
 
     .column-left h1 {
@@ -119,6 +118,7 @@ footer p{
     align-items: flex-start;
     flex-direction: column;
     justify-content: flex-start;
+    width: 28vmin;
 }
 .column h2 {
     align-self: start;
@@ -140,6 +140,7 @@ footer p{
 .secondary-part {
     display: flex;
     flex-direction: column;
+    margin-top: 20vw;
     padding: 0 calc((100vw - 1300px) / 2);
 }
 .secondary-part-container {
@@ -189,5 +190,8 @@ footer p{
     }
     .column-l {
         flex-direction: row-reverse;
+    }
+    .text-column {
+        width: auto;
     }
 }

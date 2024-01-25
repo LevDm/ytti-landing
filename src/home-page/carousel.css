@@ -1,18 +1,13 @@
 .carousel {
     position: relative;
     width: 28vmin;
-    height: 56vmin;
+    height: 62vmin;
     margin: auto;
     overflow: hidden;
     border-radius: 1rem;
 }
 
-@media screen and (max-width: 930px) {
-    .carousel {
-        width: 40vmin;
-        height: 70vmin;
-    }
-}
+
 
 .carousel-inner {
     display: flex;
@@ -30,28 +25,67 @@
     position: absolute;
     background-color: #111111a0;
     text-align: center;
-    height: 1.5vmin;
-    transform: translateY(1.5vmin);
+    height: 1.7vmin;
+    transform: translateY(1.7vmin);
     width: 100%;
     bottom: 0;
     left: 0;
     transition: ease 1s;
+    display: flex;
+    gap: 1vmin;
+    justify-content:  center;
 }
 
 .indicator-area {
-    display: inline-block;
+    display: flex;
     height: 100%;
-    margin: 0 0.1vmin;
+    width: 100%;
     padding: 0 1vmin;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
 }
 
 .indicator {
-    margin-top: 0.6vmin;
-    width: 4vmin;
-    height: 0.5vmin;
-    border-radius: 0.25vmin;
+    width: 80%;
+    height: 36%;
+    border-radius: 0.3vmin;
     background-color: #808080;
+}
+
+@media screen and (max-width: 930px) {
+    .carousel {
+        width: 40vmin;
+        height: 89vmin;
+    }
+    .carousel-indicators {
+        height: 2.4vmin;
+        transform: translateY(2.4vmin);
+    }
+    .indicator {
+        height: 32%;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .carousel-indicators {
+        height: 3.2vmin;
+        transform: translateY(3.2vmin);
+    }
+    .indicator {
+        height: 27%;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .carousel-indicators {
+        height: 4vmin;
+        transform: translateY(4vmin);
+    }
+    .indicator {
+        height: 24%;
+        width: 70%;
+    }
 }
 
 input[name="slide"] {
@@ -129,7 +163,7 @@ input[name="slide"] {
 #slide-2-1:checked ~ .carousel-inner,
 #slide-1-1:checked ~ .carousel-inner { 
     transform: translateX(0);
-    animation: slideAnimation1 15s infinite, slideAnimation0 0s infinite;
+    animation: slideAnimation1 12s infinite, slideAnimation0 0s infinite;
 }
 #slide-5-2:checked ~ .carousel-inner,
 #slide-4-2:checked ~ .carousel-inner,
@@ -137,7 +171,7 @@ input[name="slide"] {
 #slide-2-2:checked ~ .carousel-inner,
 #slide-1-2:checked ~ .carousel-inner { 
     transform: translateX(-100%);
-    animation: slideAnimation2 15s infinite, slideAnimation0 0s infinite;;
+    animation: slideAnimation2 12s infinite, slideAnimation0 0s infinite;;
 }
 #slide-5-3:checked ~ .carousel-inner,
 #slide-4-3:checked ~ .carousel-inner,
@@ -145,7 +179,7 @@ input[name="slide"] {
 #slide-2-3:checked ~ .carousel-inner,
 #slide-1-3:checked ~ .carousel-inner { 
     transform: translateX(-200%);
-    animation: slideAnimation3 15s infinite, slideAnimation0 0s infinite;;
+    animation: slideAnimation3 12s infinite, slideAnimation0 0s infinite;;
 }
 
 #slide-5-1:checked ~ .carousel-play, 
@@ -219,6 +253,6 @@ input[name="slide"] {
 #slide-1-1:checked ~ .carousel-indicators .indicator-area:nth-child(1) .indicator,
 #slide-1-2:checked ~ .carousel-indicators .indicator-area:nth-child(2) .indicator,
 #slide-1-3:checked ~ .carousel-indicators .indicator-area:nth-child(3) .indicator {
-    animation: indicatorAnimation 3s;
+    animation: indicatorAnimation 2s;
     background-color: #bbb;
 }
