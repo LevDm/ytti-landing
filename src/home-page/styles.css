@@ -62,7 +62,6 @@ footer p{
 }
 
 @media screen and (max-width: 768px) {
-
     .column-left h1 {
         font-size: 2.1rem;
     }
@@ -87,13 +86,25 @@ footer p{
     color: white;
     font-family: 'Montserrat Alternates', sans-serif;
 }
+.add-description {
+    align-items: center;
+    justify-content: center;
+}
+.add-description p {
+    font-size: 1.2rem;
+    color: white;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
 
 @media screen and (max-width: 768px) {
     .part-description h1 {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
     }
     .part-description p {
-        font-size: 1.1rem;
+        font-size: 1.15rem;
+    }
+    .add-description p {
+        font-size: 0.9rem;
     }
 }
 
@@ -107,26 +118,34 @@ footer p{
     padding-bottom: 2vw;
     border-radius: 1rem;
 }
+.text-in-column {
+    max-width: 35%;
+}
+
 .column-l {
     flex-direction: column;
 }
 .column-r {
     flex-direction: column;
 }
-.text-column {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 28vmin;
+
+.s-column-l {
+    flex-direction: row;
 }
+.s-column-r {
+    flex-direction: row-reverse;
+}
+
+
 .column h2 {
+    font-size: 1.4rem;
     align-self: start;
     margin: 0.5rem 1rem;
     font-family: 'Montserrat Alternates', sans-serif;
     color: white
 }
 .column p {
+    font-size: 1rem;
     align-self: start;
     margin: 0.5rem 1rem;
     font-family: 'Montserrat Alternates', sans-serif;
@@ -144,7 +163,7 @@ footer p{
 }
 .secondary-part-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 2vw;
     padding: 2vw;
 }
@@ -177,12 +196,11 @@ footer p{
     .tertiary-part-container {
         grid-template-columns: 1fr;
     }
-    .secondary-image {
-        width: 40vmin;
-        height: 70vmin;
-    }
     .column {
         padding-bottom: 1vw;
+    }
+    .text-in-column {
+        max-width: 80%;
     }
     .column-r {
         flex-direction: row;
@@ -190,7 +208,14 @@ footer p{
     .column-l {
         flex-direction: row-reverse;
     }
-    .text-column {
-        width: auto;
+    .s-column-l {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 1rem;
+    }
+    .s-column-r {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 1rem;
     }
 }
