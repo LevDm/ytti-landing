@@ -8,6 +8,7 @@
 }
 
 .image-container {
+    border-radius: 1rem;
     background-color: #111;
     display: flex;
     justify-content: center;
