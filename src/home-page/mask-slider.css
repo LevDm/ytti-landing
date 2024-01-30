@@ -94,10 +94,15 @@
       grid-template-columns: 1fr;
     }
     .primary-image-container {
-        width: 48vmin;
-        height: 106vmin;
+        width: 44vmin;
+        height: 97vmin;
+    }
+    .in-column-logo {
+        transform: scale(0.9);
     }
 }
+/* 
+
 
 @media screen and (max-width: 600px) {
     .primary-image-container {
@@ -105,3 +110,4 @@
         height: 128vmin;
     }
 }
+*/

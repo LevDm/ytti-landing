@@ -14,7 +14,7 @@ footer {
     justify-content: center;
     height: 60px;
 }
-footer p{
+footer p {
     font-size: 0.8rem;
     color: grey;
     font-style: italic;
@@ -114,12 +114,16 @@ footer p{
     align-items: center;
     justify-content: space-between;
     
+    margin-top: 1.5rem;
     padding: 1vw;
     padding-bottom: 2vw;
     border-radius: 1rem;
 }
 .text-in-column {
     max-width: 35%;
+}
+.t-column-text {
+    max-width: 50%;
 }
 
 .column-l {
@@ -200,8 +204,9 @@ footer p{
         padding-bottom: 1vw;
     }
     .text-in-column {
-        max-width: 80%;
+        max-width: 70%;
     }
+    
     .column-r {
         flex-direction: row;
     }
@@ -217,5 +222,36 @@ footer p{
         flex-direction: column;
         align-items: flex-start;
         padding: 0 1rem;
+    }
+}
+
+@media screen and (max-width: 460px) {
+
+    .column-left h1 {
+        font-size: 1.5rem;
+    }
+    .column-left p {
+        font-size: 0.9rem;
+    }
+
+    .part-description h1 {
+        font-size: 1.2rem;
+    }
+    .part-description p {
+        font-size: 1rem;
+    }
+    .add-description p {
+        font-size: 0.8rem;
+    }
+
+    .column h2 {
+        font-size: 1.1rem;
+    }
+    .column p {
+        font-size: 1rem;
+    }
+
+    footer p {
+        font-size: 0.7rem;
     }
 }

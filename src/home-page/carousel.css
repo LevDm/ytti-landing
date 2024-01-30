@@ -66,8 +66,8 @@
         height: 89vmin;
     }
     .s-carousel {
-        width: 90vmin;
-        height: 89vmin;
+        width: 84vmin;
+        height: 88vmin;
     }
     .carousel-indicators {
         height: 2.4vmin;
@@ -85,6 +85,10 @@
     }
     .indicator {
         height: 27%;
+    }
+    .s-carousel {
+        width: 80vmin;
+        height: 62Vmin;
     }
 }
 
