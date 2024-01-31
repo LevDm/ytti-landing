@@ -22,6 +22,8 @@ footer p {
     font-family: 'Exo 2', sans-serif;
 }
 
+
+
 .primary-part-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -61,14 +63,7 @@ footer p {
     padding: 0 2rem ;
 }
 
-@media screen and (max-width: 768px) {
-    .column-left h1 {
-        font-size: 2.1rem;
-    }
-    .column-left p {
-        font-size: 1.1rem;
-    }
-}
+
 
 
 .part-description {
@@ -96,34 +91,23 @@ footer p {
     font-family: 'Montserrat Alternates', sans-serif;
 }
 
-@media screen and (max-width: 768px) {
-    .part-description h1 {
-        font-size: 1.5rem;
-    }
-    .part-description p {
-        font-size: 1.15rem;
-    }
-    .add-description p {
-        font-size: 0.9rem;
-    }
-}
+
 
 
 .column {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
-    margin-top: 1.5rem;
     padding: 1vw;
     padding-bottom: 2vw;
-    border-radius: 1rem;
+    gap: 1rem;
 }
 .text-in-column {
-    max-width: 35%;
+    max-width: 32%;
+    flex: content;
 }
 .t-column-text {
-    max-width: 50%;
+    flex: content;
 }
 
 .column-l {
@@ -143,17 +127,14 @@ footer p {
 
 .column h2 {
     font-size: 1.4rem;
-    align-self: start;
     margin: 0.5rem 1rem;
     font-family: 'Montserrat Alternates', sans-serif;
     color: white
 }
 .column p {
     font-size: 1rem;
-    align-self: start;
     margin: 0.5rem 1rem;
     font-family: 'Montserrat Alternates', sans-serif;
-    max-width: 50vw;
     color: white;
     margin-bottom: 2rem;
 }
@@ -171,14 +152,6 @@ footer p {
     gap: 2vw;
     padding: 2vw;
 }
-.secondary-image {
-    width: 28vmin;
-    height: 56vmin;
-    background-color: bisque;
-    border-radius: 1rem;
-}
-
-
 
 .tertiary-part {
     display: flex;
@@ -194,37 +167,54 @@ footer p {
 
 
 @media screen and (max-width: 930px) {
-    .secondary-part-container {
-      grid-template-columns: 1fr;
-    }
     .tertiary-part-container {
         grid-template-columns: 1fr;
     }
+
     .column {
         padding-bottom: 1vw;
     }
-    .text-in-column {
-        max-width: 70%;
-    }
-    
     .column-r {
-        flex-direction: row;
+        flex-direction: row;  
     }
     .column-l {
         flex-direction: row-reverse;
     }
+    .text-in-column {
+        max-width: none;
+    }
+    .t-column-text {
+        max-width: 50%;
+    }
     .s-column-l {
         flex-direction: column;
         align-items: flex-start;
-        padding: 0 1rem;
+        
     }
     .s-column-r {
         flex-direction: column;
         align-items: flex-start;
-        padding: 0 1rem;
     }
 }
-
+@media screen and (max-width: 768px) {
+    .column-left h1 {
+        font-size: 2.1rem;
+    }
+    .column-left p {
+        font-size: 1.1rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .part-description h1 {
+        font-size: 1.5rem;
+    }
+    .part-description p {
+        font-size: 1.15rem;
+    }
+    .add-description p {
+        font-size: 0.9rem;
+    }
+}
 @media screen and (max-width: 460px) {
 
     .column-left h1 {
