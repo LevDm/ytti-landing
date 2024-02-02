@@ -27,7 +27,6 @@ footer p {
 .primary-part-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 90vh;
     padding: 0 calc((100vw - 1300px) / 2) 2rem;
 }
 
